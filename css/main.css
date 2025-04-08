@@ -295,12 +295,24 @@ body [data-aos="zoom-in"] {
   content: "\e630";
 }
 
+.icon-github:before {
+  content: "\e619";
+}
+
 .icon-twitter:before {
   content: "\e62a";
 }
 
+.icon-bilibili:before {
+  content: "\e603";
+}
+
 .icon-weibo:before {
   content: "\e62c";
+}
+
+.icon-steam:before {
+  content: "\e624";
 }
 
 .sidebar-btn-wrapper .sidebar-toc-btn:before {
@@ -2971,6 +2983,27 @@ a, .main-nav-icon, .popup-btn-close {
   transform: scale(1.2);
 }
 
+.icon-github {
+  color: #191717;
+  transition: 1;
+}
+
+[data-theme="dark"] .icon-github {
+  color: #bc88ff;
+}
+
+.icon-bilibili {
+  color: #00a1d6;
+}
+
+.icon-steam {
+  color: #171a21;
+}
+
+[data-theme="dark"] .icon-steam {
+  color: #bc88ff;
+}
+
 .sidebar-menu {
   margin: 20px 0;
   width: 100%;
@@ -3697,17 +3730,17 @@ a, .main-nav-icon, .popup-btn-close {
   background: var(--color-hover-shadow) !important;
 }
 
-#live2d-plugin {
+#waifu {
   right: 4.5% !important;
   left: auto !important;
 }
 
-#live2d-tool {
+#waifu-tool {
   right: auto !important;
   left: -10px !important;
 }
 
-#live2d-toggle {
+#waifu-toggle {
   z-index: 1;
 }
 
