@@ -235,7 +235,7 @@
     <div class="loading-left-bg loading-bg"></div>
     <div class="loading-right-bg loading-bg"></div>
     <div class="spinner-box">
-      <div class="loading-taichi">
+      <div class="loading-taichi rotate">
         
           <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
             <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
@@ -573,26 +573,6 @@
 </section>
         </div>
         
-        
-          <meting-js
-            theme="var(--color-link)"
-            id="13552043145"
-            server="netease"
-            type="playlist"
-            
-            fixed="true"
-            autoplay="false"
-            
-            order="random"
-            
-            volume="0.5"
-            
-            
-            lrc-type="1"
-            >
-          </meting-js>
-        
-        
 
 
 
@@ -607,7 +587,6 @@
     <div>
       <span class="icon-copyright"></span>
       
-        2020 -
         2025
       
       <span class="footer-info-sep rotate"></span>
@@ -826,6 +805,26 @@
           <img class="reimu-bg" src="/images/reimu.png" />
         </div>
       </div>
+    
+    
+    
+      <meting-js
+        theme="var(--color-link)"
+        id="13552043145"
+        server="netease"
+        type="playlist"
+        
+        fixed="true"
+        autoplay="false"
+        
+        order="random"
+        
+        volume="0.33"
+        
+        
+        lrc-type="1"
+        >
+      </meting-js>
     
     
 
@@ -1729,6 +1728,21 @@
 
 
   
+  <script>
+    var isMobile = window.matchMedia('(max-width: 959px)').matches;
+    if (isMobile) {
+      const meting = _$('meting-js');
+      if (meting) {
+        meting.setAttribute('fixed', 'true');
+        const aside = meting.parentNode;
+        if (aside?.tagName === 'ASIDE') {
+          aside.removeChild(meting);
+          document.body.appendChild(meting);
+        }
+      }
+    }
+  </script>
+  
 
   
   
@@ -1750,7 +1764,6 @@
   ></script>
 
 
-  
 
 
 

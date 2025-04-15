@@ -22,11 +22,11 @@
   
 
 <title>
-  El Psy Kongroo | Yabusame Houlen
+  Speed Up Python | Yabusame Houlen
 </title>
 <meta
   name="description"
-  content="meme"
+  content="少女折寿中..."
 />
 
 
@@ -110,12 +110,12 @@
 
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="El Psy Kongroo | Yabusame Houlen" />
+  <meta property="og:title" content="Speed Up Python | Yabusame Houlen" />
   <meta
     property="og:description"
-    content="meme"
+    content="少女折寿中..."
   />
-  <meta property="og:url" content="https://yabusamehoulen.github.io/about/" />
+  <meta property="og:url" content="https://yabusamehoulen.github.io/post/hpc_0/" />
   <meta
     property="og:site_name"
     content="11-D Space"
@@ -125,8 +125,10 @@
     content="/"
   />
   <meta property="article:author" content="Yabusame Houlen" />
-  <meta property="article:published_time" content="2025-04-01T20:12:52&#43;08:00" />
-  <meta property="article:modified_time" content="2025-04-01T20:12:52&#43;08:00" />
+  <meta property="article:published_time" content="2025-04-13T15:00:00-18:00" />
+  <meta property="article:modified_time" content="2025-04-13T15:00:00-18:00" />
+  
+    <meta property="article:tag" content="pybind" />
   
   
   <meta name="twitter:card" content="summary" />
@@ -337,11 +339,13 @@
 <header id="header">
   
     
-      <picture>
-        
-      </picture>
       
-        <img  fetchpriority="high" src="/images/banner.webp" alt="El Psy Kongroo">
+        <picture>
+          
+        </picture>
+        
+          <img  fetchpriority="high" src="/images/banner.webp" alt="Speed Up Python">
+        
       
     
   
@@ -356,7 +360,7 @@
   
         
           <a href="/" id="logo">
-            <h1 data-aos="slide-up">El Psy Kongroo</h1>
+            <h1 data-aos="slide-up">Speed Up Python</h1>
           </a>
         
       
@@ -378,13 +382,30 @@
   
   
   
-  <div class="sidebar-wrapper ">
+  <div class="sidebar-wrapper wrap-sticky">
     <div
       class="sidebar-wrap"
       data-aos="fade-up"
     >
       
         
+          <div class="sidebar-toc-sidebar">
+            <div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#先给python测速">先给Python测速</a></li>
+    <li><a href="#试用cxx">试用Cxx</a></li>
+    <li><a href="#python--cxx">Python + Cxx</a></li>
+    <li><a href="#julia-孔乙己来喽">Julia 孔乙己来喽</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+          </div>
+          <div class="sidebar-common-sidebar hidden">
+            
 <div class="sidebar-author">
   <img
     data-src="/avatar/avatar.jpg"
@@ -513,165 +534,22 @@
   
 </div>
 
+          </div>
+        
       
 
+      
+        
+          <div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div>
+        
       
     </div>
   </div>
 
   <div class="sidebar-widget">
-    
-      
-        
-  <div class="widget-wrapper">
-    <div
-      class="widget-wrap"
-      data-aos="fade-up"
-    >
-      <div style="display: flex; justify-content: space-between;">
-        <h3 class="widget-title">Categories</h3>
-        
-      </div>
-      <div class="widget">
-        <ul class="category-list">
-          
-          
-            
-              <li class="category-list-item">
-                <a class="category-list-link" href="/categories/hpc/"
-                  >HPC</a
-                >
-              </li>
-              
-            
-          
-            
-              <li class="category-list-item">
-                <a class="category-list-link" href="/categories/markdown/"
-                  >Markdown</a
-                >
-              </li>
-              
-            
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
-      
-        
-  <div class="widget-wrapper">
-    <div
-      class="widget-wrap"
-      data-aos="fade-up"
-    >
-      <div style="display: flex; justify-content: space-between;">
-        <h3 class="widget-title">Tags</h3>
-        
-      </div>
-      <div class="widget">
-        <ul class="tag-list" itemprop="keywords">
-          
-          
-            
-            <li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/hello/"
-                  aria-label="Tag: Hello"
-                >
-                  Hello
-                </a>
-              </li>
-              
-            
-          
-            
-            <li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/pybind/"
-                  aria-label="Tag: Pybind"
-                >
-                  Pybind
-                </a>
-              </li>
-              
-            
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
-      
-        
-<div class="widget-wrapper">
-  <div
-    class="widget-wrap"
-    data-aos="fade-up"
-  >
-    <h3 class="widget-title">Tag Cloud</h3>
-    
-    <div class="widget tagcloud">
-      
-      
-        
-          
-          <a
-            style="font-size:10px"
-            href="/tags/hello/"
-            aria-label="Tag: Hello"
-            >Hello</a
-          >
-          
-        
-      
-        
-          
-          <a
-            style="font-size:10px"
-            href="/tags/pybind/"
-            aria-label="Tag: Pybind"
-            >Pybind</a
-          >
-          
-        
-      
-    </div>
-  </div>
-</div>
-
-      
-        
-  
-  <div class="widget-wrapper">
-    <div
-      class="widget-wrap"
-      data-aos="fade-up"
-    >
-      <h3 class="widget-title">Recent Posts</h3>
-      <div class="widget">
-        <ul>
-          
-            <li>
-              <a href="/post/hpc_0/">Speed Up Python</a>
-            </li>
-          
-            <li>
-              <a href="/post/hello/">Hello World</a>
-            </li>
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
-      
     
   </div>
   
@@ -694,22 +572,39 @@
     class="article-date-link"
     data-aos="zoom-in"
   >
-    <time datetime="2025-04-01 20:12:52 &#43;0800 CST" itemprop="datePublished"
-      >2025-04-01</time
+    <time datetime="2025-04-13 15:00:00 -1800 -1800" itemprop="datePublished"
+      >2025-04-13</time
     >
     <time style="display: none;" id="post-update-time"
-      >2025-04-01</time
+      >2025-04-13</time
     >
   </span>
 </div>
 
       <div class="article-category">
   
+    <a
+      class="article-category-link"
+      href="/categories/hpc"
+      data-aos="zoom-in"
+      >HPC</a
+    >
+  
 </div>
 
     </div>
     <div class="hr-line"></div>
     
+  <div class="article-gallery">
+    <div class="article-gallery-photos">
+      
+        <a class="article-gallery-img article-gallery-item" href="https://raw.githubusercontent.com/YabusameHoulen/Mottos/refs/heads/master/Figures/Art/cute_gun_reimu.png" target="_blank">
+          <img src="https://raw.githubusercontent.com/YabusameHoulen/Mottos/refs/heads/master/Figures/Art/cute_gun_reimu.png" itemprop="image" alt="gallery" onload="this.parentNode.dataset.pswpWidth = this.naturalWidth;this.parentNode.dataset.pswpHeight = this.naturalHeight;" >
+        </a>
+      
+    </div>
+  </div>
+
     <div class="e-content article-entry" itemprop="articleBody">
       
         <blockquote id="outdate-blockquote" style="display: none;">
@@ -717,9 +612,203 @@
         </blockquote>
       
       
-        <blockquote>
-<p>我对普通的人类没有兴趣，如果你们中有外星人，未来人，异世界的人或者超能力者的话，就尽管来找我吧！以上。</p></blockquote>
-
+        <h1 id="记录自己的瞎折腾">
+<a class="header-anchor" href="#%e8%ae%b0%e5%bd%95%e8%87%aa%e5%b7%b1%e7%9a%84%e7%9e%8e%e6%8a%98%e8%85%be"></a>
+记录自己的瞎折腾
+</h1><h2 id="先给python测速">
+<a class="header-anchor" href="#%e5%85%88%e7%bb%99python%e6%b5%8b%e9%80%9f"></a>
+先给Python测速
+</h2><p>简单计算一下fibonacci数列的值，使用递归和递归加cache的基础方法</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span> <span class="o">=</span> <span class="n">n</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span> <span class="o">=</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## 闭包增加缓存</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">cached_fib</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cache</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">n</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">cache</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cache</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">cache</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">fibonacci</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## 这个就不用试了(</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fib_tr</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">ret</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">tmp</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ret</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">fib_tr</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">ret</span> <span class="o">+</span> <span class="n">tmp</span><span class="p">,</span> <span class="n">ret</span><span class="p">)</span>
+</span></span></code></pre></div><p>然后测一下用时多少</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">t1</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">result1</span> <span class="o">=</span> <span class="n">fib</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">t2</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="n">cached_fib</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">result2</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">t3</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">result3</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">t4</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;the 35th number is </span><span class="si">{</span><span class="n">result1</span><span class="si">}</span><span class="s2">, use time </span><span class="si">{</span><span class="p">(</span><span class="n">t2</span> <span class="o">-</span> <span class="n">t1</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span><span class="si">}</span><span class="s2"> s&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;the 35th number is </span><span class="si">{</span><span class="n">result2</span><span class="si">}</span><span class="s2">, use time </span><span class="si">{</span><span class="p">(</span><span class="n">t3</span> <span class="o">-</span> <span class="n">t2</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span><span class="si">}</span><span class="s2"> s&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;the 36th number is </span><span class="si">{</span><span class="n">result3</span><span class="si">}</span><span class="s2">, use time </span><span class="si">{</span><span class="p">(</span><span class="n">t4</span> <span class="o">-</span> <span class="n">t3</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span><span class="si">}</span><span class="s2"> s&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>the 35th number is 9227465, use time 0.842028 s</p>
+<p>the 35th number is 9227465, use time 1.8e-05 s</p>
+<p>the 36th number is 14930352, use time 1e-06 s</p>
+<p>闭包加个缓存好像有用了，也许可以使用<strong>类</strong>、 <strong>装饰器</strong>（手写或者直接<code>from functools import lru_cache</code>，或者&hellip;</p>
+<h2 id="试用cxx">
+<a class="header-anchor" href="#%e8%af%95%e7%94%a8cxx"></a>
+试用Cxx
+</h2><p><del>虽然C++完全没学会，在可预见的未来也基本学不会，下面只使用递归的方法做，还不知道怎么加cache</del></p>
+<p>只使用最简单的版本，不知道怎么正确地进行benchmark，但是大概要比之前的快&hellip;</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;unordered_map&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;chrono&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">fib</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="n">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 未使用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">fibTr</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">return</span> <span class="n">fibTr</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ret</span> <span class="o">+</span> <span class="n">tmp</span><span class="p">,</span> <span class="n">ret</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration_cast</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">high_resolution_clock</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">milliseconds</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">n</span><span class="p">{</span><span class="mi">35</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">t1</span> <span class="o">=</span> <span class="n">high_resolution_clock</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">result</span> <span class="o">=</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">t2</span> <span class="o">=</span> <span class="n">high_resolution_clock</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">time_delta</span> <span class="o">=</span> <span class="n">duration_cast</span><span class="o">&lt;</span><span class="n">milliseconds</span><span class="o">&gt;</span><span class="p">(</span><span class="n">t2</span> <span class="o">-</span> <span class="n">t1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Operation took time (ms): &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">time_delta</span><span class="p">.</span><span class="n">count</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Operation took time (ms): 13</p>
+<h2 id="python--cxx">
+<a class="header-anchor" href="#python--cxx"></a>
+Python + Cxx
+</h2><p>我想试<code>Python</code>加<code>Cxx</code>的解决方案。 <code>pybind11</code>试用一下：<code>sudo apt intall pybind11-dev</code></p>
+<p>新建一个<code>requirements.txt</code>, 写入内容：<code>pybind</code></p>
+<p>在<code>Python</code>环境里(我使用的是miniconda的Base环境)安装一下<code>pip install -r requirements.txt</code></p>
+<p>创建一个<code>fib_lib.cpp</code>，内容如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;pybind11/pybind11.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">namespace</span> <span class="n">py</span> <span class="o">=</span> <span class="n">pybind11</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">fib</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">PYBIND11_MODULE</span><span class="p">(</span><span class="n">fib_lib</span><span class="p">,</span> <span class="n">m</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&#34;fib&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">fib</span><span class="p">,</span> <span class="s">&#34;Calculate Fibonacci Numbers&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>再输入以下神秘代码：（可以在vscode里搞一个Task防止整错了）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">c++ -O3 -Wall -shared -std<span class="o">=</span>c++20 -fPIC <span class="k">$(</span>python3 -m pybind11 --includes<span class="k">)</span> fib_lib.cpp -o fib_lib<span class="k">$(</span>python3-config --extension-suffix<span class="k">)</span>
+</span></span></code></pre></div><p>会生成一个<code>fib_lib.cpython-312-x86_64-linux-gnu.so</code>的动态库文件在当前路径，以上操作都在conda的Base环境内</p>
+<p>在路径下写其它的Python文件就可以用这个动态库了：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">datetime</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">fib_lib</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">n</span> <span class="o">=</span> <span class="mi">35</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">t1</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fib</span> <span class="o">=</span> <span class="n">fib_lib</span><span class="o">.</span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t2</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">time_delta</span> <span class="o">=</span> <span class="p">(</span><span class="n">t2</span> <span class="o">-</span> <span class="n">t1</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">th fibonacci number </span><span class="si">{</span><span class="n">fib</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Operation took aproximately </span><span class="si">{</span><span class="n">time_delta</span><span class="si">}</span><span class="s2"> ms&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>35th fibonacci number 9227465</p>
+<p>Operation took aproximately 12.209 ms</p>
+<p>为啥比上面直接整Cxx快捏 ~(￣▽￣)~*</p>
+<p>总之调用成功了，最原始递归计算Fibonacci的用时从 0.842028 s → 12.209 ms</p>
+<h2 id="julia-孔乙己来喽">
+<a class="header-anchor" href="#julia-%e5%ad%94%e4%b9%99%e5%b7%b1%e6%9d%a5%e5%96%bd"></a>
+Julia 孔乙己来喽
+</h2><p>上述步骤好像步骤比较繁琐，我对<code>Julia</code>比较熟悉，进行一个<code>Julia</code>的用：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="c">## fibonacci 的 四种写法</span>
+</span></span><span class="line"><span class="cl"><span class="n">fib1</span><span class="p">(</span><span class="n">n</span><span class="o">::</span><span class="kt">Integer</span><span class="p">)</span> <span class="o">=</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="n">fib2</span> <span class="o">=</span> <span class="k">let</span> <span class="n">cache</span> <span class="o">=</span> <span class="kt">Dict</span><span class="p">{</span><span class="kt">Int</span><span class="p">,</span> <span class="kt">Int</span><span class="p">}()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">function</span> <span class="p">(</span><span class="n">n</span><span class="o">::</span><span class="kt">Int</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">!</span><span class="n">haskey</span><span class="p">(</span><span class="n">cache</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="n">cache</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="o">?</span> <span class="n">n</span> <span class="o">:</span> <span class="n">fib2</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib2</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">end</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">cache</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="n">fib3</span><span class="p">(</span><span class="n">n</span><span class="o">::</span><span class="kt">Integer</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="kt">BigInt</span><span class="o">.</span><span class="p">([</span><span class="mi">1</span> <span class="mi">1</span><span class="p">;</span> <span class="mi">1</span> <span class="mi">0</span><span class="p">])</span><span class="o">^</span><span class="n">n</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">fib4</span><span class="p">(</span><span class="n">n</span><span class="o">::</span><span class="kt">Integer</span><span class="p">)</span> <span class="o">=</span> <span class="n">fib4</span><span class="p">(</span><span class="kt">Val</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="n">fib4</span><span class="p">(</span><span class="o">::</span><span class="kt">Val</span><span class="p">{</span><span class="kt">N</span><span class="p">})</span> <span class="o">=</span> <span class="n">N</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="n">fib4</span><span class="p">(</span><span class="kt">Val</span><span class="p">{</span><span class="kt">N</span><span class="o">-</span><span class="mi">1</span><span class="p">})</span> <span class="o">+</span> <span class="n">fib4</span><span class="p">(</span><span class="kt">Val</span><span class="p">{</span><span class="kt">n</span><span class="o">-</span><span class="mi">2</span><span class="p">})</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">### 测测速度，输出放字符串里了，直方图删掉...</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">BenchmarkTools</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@benchmark</span> <span class="n">fib1</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34; 直接递归
+</span></span></span><span class="line"><span class="cl"><span class="s">BenchmarkTools.Trial: 244 samples with 1 evaluation per sample.
+</span></span></span><span class="line"><span class="cl"><span class="s"> Range (min … max):  19.783 ms …  22.563 ms  ┊ GC (min … max): 0.00% … 0.00%
+</span></span></span><span class="line"><span class="cl"><span class="s"> Time  (median):     20.528 ms               ┊ GC (median):    0.00%
+</span></span></span><span class="line"><span class="cl"><span class="s"> Time  (mean ± σ):   20.550 ms ± 264.387 μs  ┊ GC (mean ± σ):  0.00% ± 0.00%
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  19.8 ms         Histogram: frequency by time         21.6 ms &lt;
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s"> Memory estimate: 0 bytes, allocs estimate: 0.
+</span></span></span><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@benchmark</span> <span class="n">fib2</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34; 带点cache
+</span></span></span><span class="line"><span class="cl"><span class="s">BenchmarkTools.Trial: 10000 samples with 998 evaluations per sample.
+</span></span></span><span class="line"><span class="cl"><span class="s"> Range (min … max):  23.447 ns …  2.179 μs  ┊ GC (min … max): 0.00% … 98.11%
+</span></span></span><span class="line"><span class="cl"><span class="s"> Time  (median):     25.852 ns              ┊ GC (median):    0.00%
+</span></span></span><span class="line"><span class="cl"><span class="s"> Time  (mean ± σ):   27.210 ns ± 31.430 ns  ┊ GC (mean ± σ):  3.15% ±  3.81%
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  23.4 ns         Histogram: frequency by time        32.8 ns &lt;
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s"> Memory estimate: 16 bytes, allocs estimate: 1.
+</span></span></span><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@benchmark</span> <span class="n">fib3</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34; 不GC的时候够了
+</span></span></span><span class="line"><span class="cl"><span class="s">BenchmarkTools.Trial: 10000 samples with 1 evaluation per sample.
+</span></span></span><span class="line"><span class="cl"><span class="s"> Range (min … max):  11.200 μs …  69.002 ms  ┊ GC (min … max):  0.00% … 49.65%
+</span></span></span><span class="line"><span class="cl"><span class="s"> Time  (median):     12.200 μs               ┊ GC (median):     0.00%
+</span></span></span><span class="line"><span class="cl"><span class="s"> Time  (mean ± σ):   20.620 μs ± 689.902 μs  ┊ GC (mean ± σ):  16.61% ±  0.50%
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  11.2 μs       Histogram: log(frequency) by time      34.6 μs &lt;
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s"> Memory estimate: 11.38 KiB, allocs estimate: 581.
+</span></span></span><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@benchmark</span> <span class="n">fib4</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34; 这个靠编译就弄好了，快到测不出速度...
+</span></span></span><span class="line"><span class="cl"><span class="s">BenchmarkTools.Trial: 10000 samples with 1000 evaluations per sample.
+</span></span></span><span class="line"><span class="cl"><span class="s"> Range (min … max):  1.500 ns … 27.500 ns  ┊ GC (min … max): 0.00% … 0.00%
+</span></span></span><span class="line"><span class="cl"><span class="s"> Time  (median):     1.600 ns              ┊ GC (median):    0.00%
+</span></span></span><span class="line"><span class="cl"><span class="s"> Time  (mean ± σ):   1.604 ns ±  0.339 ns  ┊ GC (mean ± σ):  0.00% ± 0.00%
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  1.5 ns         Histogram: frequency by time         1.7 ns &lt;
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s"> Memory estimate: 0 bytes, allocs estimate: 0.
+</span></span></span><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34;</span>
+</span></span></code></pre></div>
       
     </div>
     <footer class="article-footer">
@@ -742,19 +831,19 @@
 
 <div class="share-wrapper">
   
-    <a href="https://connect.qq.com/widget/shareqq/index.html?url=https://yabusamehoulen.github.io/about/&amp;title=El%20Psy%20Kongroo&amp;desc=meme&amp;source=https://yabusamehoulen.github.io/" target="_blank" rel="noopener noreferrer" title="El Psy Kongroo">
+    <a href="https://connect.qq.com/widget/shareqq/index.html?url=https://yabusamehoulen.github.io/post/hpc_0/&amp;title=Speed%20Up%20Python&amp;desc=%0d%e8%ae%b0%e5%bd%95%e8%87%aa%e5%b7%b1%e7%9a%84%e7%9e%8e%e6%8a%98%e8%85%be%0d%e5%85%88%e7%bb%99Python%e6%b5%8b%e9%80%9f%0d%e7%ae%80%e5%8d%95%e8%ae%a1%e7%ae%97%e4%b8%80%e4%b8%8bfibonacci%e6%95%b0%e5%88%97%e7%9a%84%e5%80%bc%ef%bc%8c%e4%bd%bf%e7%94%a8%e9%80%92%e5%bd%92%e5%92%8c%e9%80%92%e5%bd%92%e5%8a%a0cache%e7%9a%84%e5%9f%ba%e7%a1%80%e6%96%b9%e6%b3%95%0afrom%20datetime%20import%20datetime%20def%20fib%28n%29:%20if%20n%20&amp;lt;%202:%20result%20=%20n%20else:%20result%20=%20fib%28n%20-%201%29%20&#43;%20fib%28n%20-%202%29%20return%20result%20##%20%e9%97%ad%e5%8c%85%e5%a2%9e%e5%8a%a0%e7%bc%93%e5%ad%98%20def%20cached_fib%28%29:%20cache%20=%20%7b1:%201,%202:%201%7d%20def%20fibonacci%28n%29:%20if%20n%20not%20in%20cache:%20cache[n]%20=%20fibonacci%28n%20-%201%29%20&#43;%20%e2%80%a6&amp;source=https://yabusamehoulen.github.io/" target="_blank" rel="noopener noreferrer" title="Speed Up Python">
       <div class="share-icon icon icon-qq">
         
       </div>
     </a>
   
-    <a href="https://twitter.com/intent/tweet?url=https://yabusamehoulen.github.io/about/&amp;text=El%20Psy%20Kongroo&amp;via=https://yabusamehoulen.github.io/" target="_blank" rel="noopener noreferrer" title="El Psy Kongroo">
+    <a href="https://twitter.com/intent/tweet?url=https://yabusamehoulen.github.io/post/hpc_0/&amp;text=Speed%20Up%20Python&amp;via=https://yabusamehoulen.github.io/" target="_blank" rel="noopener noreferrer" title="Speed Up Python">
       <div class="share-icon icon icon-twitter">
         
       </div>
     </a>
   
-    <a href="javascript:;"  title="El Psy Kongroo">
+    <a href="javascript:;"  title="Speed Up Python">
       <div class="share-icon icon icon-weixin">
         
           <div id="share-weixin">
@@ -778,7 +867,7 @@
       </div>
     </a>
   
-    <a href="https://service.weibo.com/share/share.php?url=https://yabusamehoulen.github.io/about/&amp;appkey=&amp;title=El%20Psy%20Kongroo&amp;pic=&amp;ralateUid=" target="_blank" rel="noopener noreferrer" title="El Psy Kongroo">
+    <a href="https://service.weibo.com/share/share.php?url=https://yabusamehoulen.github.io/post/hpc_0/&amp;appkey=&amp;title=Speed%20Up%20Python&amp;pic=&amp;ralateUid=" target="_blank" rel="noopener noreferrer" title="Speed Up Python">
       <div class="share-icon icon icon-weibo">
         
       </div>
@@ -798,10 +887,52 @@
       
       <ul class="article-tag-list" itemprop="keywords">
   
+    <li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/tags/pybind"
+        rel="tag"
+        >PYBIND</a
+      >
+    </li>
+  
 </ul>
 
     </footer>
   </div>
+  
+    
+  <nav
+    id="article-nav"
+    data-aos="fade-up"
+  >
+    
+      <div class="article-nav-link-wrap article-nav-link-left">
+        
+          
+          
+            <img
+              data-src="https://d-sketon.top/img/_backwebp/bg3.webp"
+              data-sizes="auto"
+              alt="Hello World"
+              class="lazyload"
+            />
+          
+        
+        <a href="/post/hello/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">
+          
+            Hello World
+          
+        </h3>
+      </div>
+    
+
+    
+  </nav>
+
+
   
 </article>
 
@@ -958,6 +1089,23 @@
   <div class="sidebar-wrap">
     
       
+        <div class="sidebar-toc-sidebar">
+          <div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#先给python测速">先给Python测速</a></li>
+    <li><a href="#试用cxx">试用Cxx</a></li>
+    <li><a href="#python--cxx">Python + Cxx</a></li>
+    <li><a href="#julia-孔乙己来喽">Julia 孔乙己来喽</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+        </div>
+        <div class="sidebar-common-sidebar hidden">
+          
 <div class="sidebar-author">
   <img
     data-src="/avatar/avatar.jpg"
@@ -1086,8 +1234,17 @@
   
 </div>
 
+        </div>
+      
     
   </div>
+  
+    
+      <div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div>
+    
   
 </nav>
 
@@ -1494,9 +1651,9 @@
       <script data-pjax>
         window.REIMU_POST = {
           author: "Yabusame Houlen",
-          title: "El Psy Kongroo",
-          url: "https:\/\/yabusamehoulen.github.io\/about\/",
-          description: "meme",
+          title: "Speed Up Python",
+          url: "https:\/\/yabusamehoulen.github.io\/post\/hpc_0\/",
+          description: "\r记录自己的瞎折腾\r先给Python测速\r简单计算一下fibonacci数列的值，使用递归和递归加cache的基础方法\nfrom datetime import datetime def fib(n): if n \u0026lt; 2: result = n else: result = fib(n - 1) \u002b fib(n - 2) return result ## 闭包增加缓存 def cached_fib(): cache = {1: 1, 2: 1} def fibonacci(n): if n not in cache: cache[n] = fibonacci(n - 1) \u002b …",
           cover: "https:\/\/yabusamehoulen.github.io\/images\/banner.webp",
         };
       </script>
