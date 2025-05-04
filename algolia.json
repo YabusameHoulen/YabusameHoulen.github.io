@@ -3,6 +3,18 @@
   
   
   {
+    "objectID": "1745510400",
+    "permalink": "/post/hpc_1/",
+    "title": "Write Fast Julia Code",
+    
+    "content": "\r尝试整合Julia代码的优化方法\r不应该优化所有代码\rProfiling只需要测代码中较慢的函数，一般使用BenchmarkTools.jl中的宏，在硬件相同的情况下测试\u0026hellip;\n代码优化的过程往往牺牲了其他方面：\n优化后的代码通常更长更难懂，可读性较差 难以适应未来改动，难以测试或移植 单纯地让电脑运行更久可以有效抵消优化代码的时间\n元编程/代码简写/生成模式\rmacro是在编译时运行并输出代码的函数，可以构建Julia表达式\nmacro defName(name, definition) return quote macro $(esc(name))() esc($(Expr(:quote, definition))) end end end @defName myField begin a::Int end struct test @myField b::Int end Expr(:quote, a = 1) 就相当于 :(:(a = 1))\neval在全局作用域中运行，@eval 相当于eval(quote ... end)的简写\n向量化的代码会创建不必要的中间数组，产生不必要的“临时分配”，减慢Julia的速度\n使用广播.符号，看上去像向量化代码，同时进行一个循环的展开： x .= x .+ f.(x) 等价于\nfor i in eachindex(x) x[i] = x[i] + f(x[i]) end 任何性能关键或正在被基准测试的代码都应该放在函数内部 重新排列结构体的字段可以减少填充（Julia 使用与 C 相同的结构体布局） 结构体形成的数组(AOS)和包含数组的结构体(SOA)内存布局不一样，使用AOS可能便于理解维护,使用SOA防止内存填充，有利于SIMD的使用\u0026hellip;结合一下AOSOA 避免在容器和结构体中使用抽象类型 计算自由度/一些Julia知识\r写个完全不具备代表性的例子，大概是典型的嵌套for循环，$O(n^2)$\nfunction nearest_neighbour(points) N, D = size(points) neighbours = zeros(Int, N) for i in 1:N point_i = points[:, i] min_squared_dist = typemax(eltype(points)) for j in 1:N point_j = points[:, j] squared_dist = sum((point_i .- point_j).^2) if min_squared_dist \u0026lt; squared_dist min_squarerd_dist = squared_dist neighbours[i] = j end end end return neighbours end 稍微分析一下以避免使用拉跨算法，或者做了不必要的操作\u0026hellip;\nArray的迭代顺序：Julia 列主序（矩阵），A[i, j] 应该尽量固定i而操作j allocations 一般指堆分配，由GC收集，应该尽量减少（提前预分配/避免无意义的拷贝） 使用StaticArrays.jl把小数组塞到栈上 $$ S(s) = \\frac{1}{(1-p) + \\frac{p}{s}}\r$$ 其中$p$为从改进的$s$资源中受益的时间比例\n$$\rS = \\frac{T_s}{T_p} = (1 - f) + fN\r$$暂时写到这里\u0026hellip;\n",
+    
+    "date": "2025-04-24 02:00:00",
+    "updated": "2025-04-24 15:00:00"
+  }
+  
+  , 
+  {
     "objectID": "1744621200",
     "permalink": "/post/hpc_0/",
     "title": "Speed Up Python",
