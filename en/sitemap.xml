@@ -2,106 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yabusamehoulen.github.io/</loc>
-    <lastmod>2025-04-24T15:00:00-18:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://yabusamehoulen.github.io/ja/"
-                />
+    <loc>http://localhost:1313/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://yabusamehoulen.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://yabusamehoulen.github.io/zh-tw/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yabusamehoulen.github.io/"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>https://yabusamehoulen.github.io/categories/</loc>
-    <lastmod>2025-04-24T15:00:00-18:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://yabusamehoulen.github.io/ja/categories/"
-                />
+    <loc>http://localhost:1313/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://yabusamehoulen.github.io/zh-cn/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://yabusamehoulen.github.io/zh-tw/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yabusamehoulen.github.io/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>https://yabusamehoulen.github.io/categories/hpc/</loc>
-    <lastmod>2025-04-24T15:00:00-18:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/post/hpc_1/</loc>
-    <lastmod>2025-04-24T15:00:00-18:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/tags/pybind/</loc>
-    <lastmod>2025-04-13T15:00:00-18:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/post/hpc_0/</loc>
-    <lastmod>2025-04-13T15:00:00-18:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/tags/</loc>
-    <lastmod>2025-04-13T15:00:00-18:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://yabusamehoulen.github.io/ja/tags/"
-                />
+    <loc>http://localhost:1313/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://yabusamehoulen.github.io/zh-cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://yabusamehoulen.github.io/zh-tw/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yabusamehoulen.github.io/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/tags/hello/</loc>
-    <lastmod>2025-04-01T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/post/hello/</loc>
-    <lastmod>2025-04-01T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/categories/markdown/</loc>
-    <lastmod>2025-04-01T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/about/</loc>
-    <lastmod>2025-04-01T20:12:52+08:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/resource/</loc>
-    <lastmod>2025-04-01T20:12:52+08:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/archives/</loc>
-    <lastmod>2022-07-26T21:46:25+08:00</lastmod>
-  </url><url>
-    <loc>https://yabusamehoulen.github.io/post/</loc>
-    <lastmod>2022-07-26T21:46:25+08:00</lastmod>
   </url>
 </urlset>
