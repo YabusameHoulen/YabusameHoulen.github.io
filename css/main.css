@@ -3730,17 +3730,17 @@ a, .main-nav-icon, .popup-btn-close {
   background: var(--color-hover-shadow) !important;
 }
 
-#live2d-plugin {
+#waifu {
   right: 4.5% !important;
   left: auto !important;
 }
 
-#live2d-tool {
+#waifu-tool {
   right: auto !important;
   left: -10px !important;
 }
 
-#live2d-toggle {
+#waifu-toggle {
   z-index: 1;
 }
 

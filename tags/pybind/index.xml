@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pybind on 11-D Space</title>
-    <link>https://yabusamehoulen.github.io/tags/pybind/</link>
+    <link>http://localhost:1313/tags/pybind/</link>
     <description>Recent content from 11-D Space</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sun, 13 Apr 2025 15:00:00 -1800</lastBuildDate>
     
     
-    <atom:link href="https://yabusamehoulen.github.io/tags/pybind/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/tags/pybind/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Speed Up Python</title>
-      <link>https://yabusamehoulen.github.io/post/hpc_0/</link>
+      <link>http://localhost:1313/post/hpc_0/</link>
       <pubDate>Sun, 13 Apr 2025 15:00:00 -1800</pubDate>
       <author>xxx@example.com (Yabusame Houlen)</author>
-      <guid>https://yabusamehoulen.github.io/post/hpc_0/</guid>
+      <guid>http://localhost:1313/post/hpc_0/</guid>
       <description>
         <![CDATA[<h1>Speed Up Python</h1><p>作者：Yabusame Houlen（xxx@example.com）</p>
         
@@ -65,7 +65,7 @@
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">fib_tr</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">ret</span> <span class="o">+</span> <span class="n">tmp</span><span class="p">,</span> <span class="n">ret</span><span class="p">)</span>
 </span></span></code></pre></div><p>然后测一下用时多少</p>
         
-        <hr><p>本文2025-04-13首发于<a href='https://yabusamehoulen.github.io/'>11-D Space</a>，最后修改于2025-04-13</p>]]>
+        <hr><p>本文2025-04-13首发于<a href='http://localhost:1313/'>11-D Space</a>，最后修改于2025-04-13</p>]]>
       </description>
       
         <category>HPC</category>
